@@ -1,0 +1,65 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./app/community/page.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************/
+.page_header__KZD3A {
+  gap: 3rem;
+  margin: 3rem auto 5rem auto;
+  width: 90%;
+  max-width: 75rem;
+  color: #ddd6cb;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.page_header__KZD3A h1 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.page_highlight__o7wr7 {
+  background: linear-gradient(90deg, #1d4da8, rgb(58, 117, 225));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.page_main__xiEsg {
+  width: 90%;
+  max-width: 40rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.page_main__xiEsg h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: #ddd6cb;
+}
+
+.page_perks__6GE1j {
+  list-style: none;
+  margin: 3rem 0;
+  padding: 0;
+}
+
+.page_perks__6GE1j li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.page_perks__6GE1j img {
+  width: 8rem;
+  height: 8rem;
+  object-fit: contain;
+}
+
+.page_perks__6GE1j p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  color: #ddd6cb;
+}
+

@@ -1,0 +1,112 @@
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./app/meals/[mealSlug]/page.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
+.page_header__iS9WF {
+  margin: auto;
+  max-width: 30rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.page_image__TX6Bw {
+  position: relative;
+  width: 30rem;
+  height: 20rem;
+}
+
+.page_header__iS9WF img {
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+  animation: page_fade-slide-in-from-left__LftlF 1s ease-out forwards;
+}
+
+.page_headerText__uLfnd {
+  color: #13120f;
+  animation: page_fade-slide-in-from-right__Ql6Xr 1s ease-out forwards;
+}
+
+.page_headerText__uLfnd h1 {
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.page_creator__OAZ_v {
+  font-size: 1rem;
+  color: #994d52;
+  text-align: center;
+  font-style: italic;
+}
+
+.page_summary__u_nKB {
+  font-size: 1.5rem;
+}
+
+.page_instructions__sI0XL {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: #13120f;
+  border-radius: 8px;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  max-width: 60rem;
+  margin: 2rem auto;
+  animation: page_fade-slide-in-from-bottom__AlhEU 1s ease-out forwards;
+}
+
+.page_loading__DKm8n {
+  font-size: 3rem;
+  text-align: center;
+  color: #ddd6cb;
+  font-weight: bold;
+  animation: page_flash__QjihM 1s ease-in-out infinite alternate;
+}
+
+@keyframes page_fade-slide-in-from-left__LftlF {
+  0% {
+    opacity: 0;
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes page_fade-slide-in-from-right__Ql6Xr {
+  0% {
+    opacity: 0;
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes page_fade-slide-in-from-bottom__AlhEU {
+  0% {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes page_flash__QjihM {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+

@@ -1,0 +1,14 @@
+{
+  "node": {
+    "6b5722cff3a61f744898e47173ffccdd50729ff8": {
+      "workers": {
+        "app/meals/share/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fdianapetrovcikova%2FWebdev%2Fnext%2FFoodies%2Flib%2Faction.js%22%2C%5B%22shareMeal%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/meals/share/page": "action-browser"
+      }
+    }
+  },
+  "edge": {},
+  "encryptionKey": "/BFe40J4hotbiA85m76UHol147U7hZnRRxq1mpZxzCc="
+}

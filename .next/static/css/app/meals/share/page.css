@@ -1,0 +1,154 @@
+/*!****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./app/components/meals/image-picker.module.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************/
+.image-picker_controls__hJ5hR {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.image-picker_picker__oWE8z .image-picker_input__WrUQk {
+  display: none;
+}
+
+.image-picker_picker__oWE8z .image-picker_button__EdCRJ {
+  border: 0;
+  padding: 0.5rem 1.5rem;
+  background: #a4abb9;
+  border-radius: 15px;
+  cursor: pointer;
+  font: inherit;
+}
+
+.image-picker_picker__oWE8z .image-picker_button__EdCRJ:hover,
+.image-picker_picker__oWE8z .image-picker_button__EdCRJ:focus {
+  background: #b3b9c6;
+}
+
+.image-picker_preview__COgtL {
+  width: 10rem;
+  height: 10rem;
+  border: 2px solid #a4abb9;
+  display: flex;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #a4abb9;
+  position: relative;
+}
+
+.image-picker_preview__COgtL p {
+  margin: 0;
+  padding: 1rem;
+}
+
+.image-picker_preview__COgtL img {
+  object-fit: cover;
+}
+
+/*!***************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./app/meals/share/page.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************/
+.page_header__Bci4u {
+  gap: 3rem;
+  margin: 3rem auto;
+  width: 90%;
+  max-width: 75rem;
+  color: #1c0d0d;
+  font-size: 1.5rem;
+}
+
+.page_header__Bci4u h1 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.page_highlight__xVP8_ {
+  background: #e82429;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.page_main__FCxrJ {
+  width: 90%;
+  max-width: 75rem;
+  margin: 3rem auto;
+  color: white;
+}
+
+.page_form__Kqohc {
+  max-width: 50rem;
+}
+
+.page_form__Kqohc label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  color: #1c0d0d;
+}
+
+.page_form__Kqohc input,
+.page_form__Kqohc textarea {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  border: 1px solid #e8d1d1;
+  background: #fcf7f7;
+  font-size: 1.25rem;
+  font-family: "Montserrat", sans-serif;
+  color: #ddd6cb;
+}
+
+.page_form__Kqohc input:focus,
+.page_form__Kqohc textarea:focus {
+  outline-color: #f99f2a;
+}
+
+.page_form__Kqohc input::placeholder {
+  font-size: 1rem;
+  color: #994d52;
+}
+
+.page_row__BRDj0 {
+  display: flex;
+  gap: 1rem;
+}
+
+.page_row__BRDj0 p {
+  width: 100%;
+}
+
+.page_actions__yN_sT {
+  text-align: right;
+}
+
+.page_actions__yN_sT button {
+  border: 0;
+  padding: 0.75rem 2rem;
+  background: #e82429;
+  border: none;
+  color: #ffffff;
+  border-radius: 15px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 1.25rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.page_actions__yN_sT button:hover,
+.page_actions__yN_sT button:focus {
+  background: #e82429;
+}
+
+.page_actions__yN_sT button:disabled,
+.page_actions__yN_sT button:hover:disabled,
+.page_actions__yN_sT button:focus:disabled {
+  background: #ccc;
+  color: #979797;
+  cursor: not-allowed;
+}
+

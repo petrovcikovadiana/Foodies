@@ -1,0 +1,142 @@
+/*!*********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./app/meals/page.module.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************/
+.page_header__JswY1 {
+  gap: 3rem;
+  margin: 2rem auto;
+  font-size: 1rem;
+  width: 80%;
+  max-width: 90rem;
+}
+
+.page_header__JswY1 h1 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.page_search__w2Evq {
+  background: rgb(237, 210, 210);
+  border-radius: 15px;
+  border: none;
+  padding: 15px;
+  width: 100%;
+}
+
+.page_highlight__2QX6_ {
+  background: linear-gradient(90deg, #f9572a, #ff8a05);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.page_header__JswY1 p {
+  margin: 0;
+}
+
+.page_cta__Mso8l a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background: #e82429;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.page_loading__COwas {
+  text-align: center;
+  animation: page_loading__COwas 1.2s ease-in-out infinite;
+}
+
+/*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./app/components/meals/meal-item.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************/
+.meal-item_meal__L_SDC {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  color: #ddd6cb;
+}
+
+.meal-item_headerText__RnFcf {
+  padding: 0.5rem 0 0 0;
+}
+
+.meal-item_headerText__RnFcf h2 {
+  margin: 0;
+  font-size: 1rem;
+  color: #1c0d0d;
+  font-family: "Montserrat", sans-serif;
+}
+
+.meal-item_headerText__RnFcf p {
+  font-size: 0.75rem;
+  color: #1c0d0d;
+  font-style: italic;
+}
+
+.meal-item_meal__L_SDC h2,
+.meal-item_meal__L_SDC p {
+  margin: 0;
+}
+
+.meal-item_image__Uz__C {
+  position: relative;
+  height: 10rem;
+}
+
+.meal-item_meal__L_SDC img {
+  object-fit: cover;
+}
+
+.meal-item_content__OFfL3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.meal-item_summary__ORmLm {
+  color: #994d52;
+  margin: 0 auto 10px auto;
+}
+
+/* .actions {
+  padding: 1rem;
+  text-align: right;
+} */
+
+/* .actions a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background: #e82429;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.actions a:hover,
+.actions a:active {
+  background: linear-gradient(90deg, #fd4715, #f9b241);
+  box-shadow: 0 0 12px rgba(242, 100, 18, 0.8);
+} */
+
+/*!**************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./app/components/meals/meals-grid.module.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************/
+.meals-grid_meals__fuGlW {
+  width: 80%;
+  max-width: 90rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  grid-gap: 1rem;
+  margin: 2rem auto;
+  list-style: none;
+  padding: 0;
+}
+
