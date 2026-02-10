@@ -1,5 +1,3 @@
-//better user feedback-after click on submit button
-
 "use client";
 import { useFormStatus } from "react-dom";
 

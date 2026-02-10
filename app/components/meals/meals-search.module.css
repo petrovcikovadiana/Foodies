@@ -1,0 +1,33 @@
+.searchForm {
+    display: flex;
+    flex-direction: row;
+    gap: 10px
+}
+
+.searchBar {
+    display: flex;
+    background: #f1e8e8;
+    border-radius: 15px;
+
+    background-image: url("/images/search.svg");
+    background-repeat: no-repeat;
+    background-position: 12px center;
+    background-size: 16px;
+
+    border: none;
+    padding: 10px;
+    padding-left: 35px;
+
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.searchBtn {
+    border: 1px solid #ccc;
+    background: transparent;
+    border-radius: 8px;
+    padding: 0.4rem 0.55rem;
+    cursor: pointer;
+    line-height: 1;
+}

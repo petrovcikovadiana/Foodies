@@ -1,0 +1,72 @@
+[
+  {
+    "title": "Potato Dumplings Stuffed with Smoked Meat",
+    "imageFile": "stuffed-potato-dumplings.jpg",
+    "ingredients": [
+      {
+        "title": "Filling",
+        "items": [
+          {
+            "amount": "400",
+            "unit": "g",
+            "name": "smoked meat, finely chopped"
+          },
+          { "amount": "1", "unit": "pcs", "name": "onion, finely chopped" },
+          { "amount": "1", "unit": "tbsp", "name": "pork lard" },
+          { "amount": "1", "unit": "pinch", "name": "salt" },
+          { "amount": "1", "unit": "pinch", "name": "ground black pepper" }
+        ]
+      },
+      {
+        "title": "Potato Dumplings",
+        "items": [
+          {
+            "amount": "400",
+            "unit": "g",
+            "name": "potatoes, cooked and peeled"
+          },
+          {
+            "amount": "200",
+            "unit": "g",
+            "name": "semi-coarse flour"
+          },
+          { "amount": "1", "unit": "pcs", "name": "egg" }
+        ]
+      },
+      {
+        "title": "Sauerkraut",
+        "items": [
+          { "amount": "1", "unit": "pcs", "name": "onion, finely chopped" },
+          { "amount": "1", "unit": "tbsp", "name": "pork lard" },
+          { "amount": "600", "unit": "g", "name": "sauerkraut, drained" },
+          { "amount": "1", "unit": "tbsp", "name": "granulated sugar" },
+          { "amount": "1", "unit": "pinch", "name": "salt, to taste" }
+        ]
+      },
+      {
+        "title": "Caramelized Onion",
+        "items": [
+          {
+            "amount": "2",
+            "unit": "pcs",
+            "name": "onions, sliced into larger pieces"
+          }
+        ]
+      }
+    ],
+    "instructions": [
+      "Prepare the filling: Heat pork lard in a pan and sauté the finely chopped onion until translucent. Add the smoked meat, season with salt and pepper, and sauté for about 5 minutes. Set aside.",
+      "Prepare the dumpling dough: Grate the cooked potatoes finely into a bowl. Add the flour and egg and work by hand into a smooth dough.",
+      "Divide the dough into about 15 equal portions. Flatten each portion, fill with the smoked meat mixture, shape into balls, and seal well.",
+      "Cook the dumplings in a pot of boiling water until they float to the surface. Remove and drain.",
+      "Prepare the sauerkraut: In the same pan used for the meat, sauté the finely chopped onion in pork lard. Add the drained sauerkraut, season with a pinch of salt and sugar, and sauté for about 10 minutes.",
+      "Prepare the caramelized onions: Slice the onions into larger pieces, lightly salt them, and sauté over low heat until golden brown and caramelized.",
+      "Serve the stuffed dumplings with sauerkraut, topped with caramelized onions and sprinkled with fresh parsley."
+    ],
+    "cooking_time": 90,
+    "categories": ["dinner", "main_dishes"],
+    "servings": 4,
+    "creator": "Diana",
+    "creator_email": "admin@example.com"
+  }
+]

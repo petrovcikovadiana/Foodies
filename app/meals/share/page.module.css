@@ -23,6 +23,7 @@
   max-width: 75rem;
   margin: 3rem auto;
   color: white;
+  overflow: hidden;
 }
 
 .form {
@@ -44,29 +45,111 @@
   padding: 0.5rem 1rem;
   border-radius: 15px;
   border: 1px solid #e8d1d1;
-  background: #fcf7f7;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-family: "Montserrat", sans-serif;
-  color: #ddd6cb;
+  color: #994d52;
+}
+
+.form textarea::placeholder {
+  font-size: 1rem;
+  color: #a4abb9;
 }
 
 .form input:focus,
 .form textarea:focus {
-  outline-color: #f99f2a;
+  outline-color: #e8d1d1;
 }
 
 .form input::placeholder {
-  font-size: 1rem;
-  color: #994d52;
+  color: #a4abb9;
 }
 
 .row {
   display: flex;
   gap: 1rem;
+  min-width: 0;
+
 }
 
 .row p {
   width: 100%;
+  min-width: 0;
+
+}
+
+.listField {
+  display: flex;
+  flex-direction: column;
+}
+
+.listRow {
+  display: flex;
+  gap: 0.5rem;
+  margin: 15px 0;
+  min-width: 0;
+
+}
+
+.listTextarea {
+  flex: 1;
+  resize: vertical;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.amountInput {
+  flex: 0 0 10%;
+  max-width: 10%;
+}
+
+.iconButton {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: #e82429;
+}
+
+.iconButton:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.addButton {
+  align-self: flex-start;
+  border: 1px solid #ccc;
+  background: #fff;
+  font-family: "Montserrat", sans-serif;
+
+  border-radius: 10px;
+  padding: 0.45rem 0.7rem;
+  cursor: pointer;
+}
+
+.addButton:hover {
+  filter: brightness(0.98);
+}
+
+.cooking_time {
+  flex: 0 0 20%;
+  max-width: 20%;
+
+}
+
+.groupWrap {
+  display: grid;
+  gap: 12px;
+}
+
+.groupHeader {
+  display: flex;
+  gap: 0.5rem;
+  margin: 15px 0;
+}
+
+.groupTitleInput {
+  flex: 1;
+  max-width: 100%;
 }
 
 .actions {
@@ -97,4 +180,102 @@
   background: #ccc;
   color: #979797;
   cursor: not-allowed;
+}
+
+.categoriesLabel {
+  margin-bottom: 0.5rem;
+  color: #1c0d0d;
+  font-size: 1.5rem;
+}
+
+.categoryButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.categoryCheckbox {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.categoryButton {
+  border-radius: 15px;
+  padding: 10px;
+  background: var(--cat-bg);
+  font-size: 1rem;
+}
+
+.categoryButton span {
+  color: var(--cat-text);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.categoryButton:hover {
+  border-color: var(--cat-border);
+}
+
+.categoryButton:has(.categoryCheckbox:checked) {
+  background: var(--cat-border);
+  border-color: var(--cat-border);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.categoryButton:has(.categoryCheckbox:checked) span {
+  color: #fff;
+}
+
+.categoryButton {
+  transition:
+    background 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.15s ease;
+}
+
+.cat_main_dishes {
+  --cat-bg: #ffeae3;
+  --cat-border: #F0493E;
+  --cat-text: #f0493e;
+}
+
+.cat_breakfast {
+  --cat-bg: #feefc9;
+  --cat-border: #f0a500;
+  --cat-text: #7a4b00;
+}
+
+.cat_dinner {
+  --cat-bg: #e9f3ff;
+  --cat-border: #2b6cb0;
+  --cat-text: #1a3d6b;
+}
+
+.cat_desserts {
+  --cat-bg: #efedfa;
+  --cat-border: #3C3A8F;
+  --cat-text: #3c3a8f;
+}
+
+.cat_snack {
+  --cat-bg: #f0f5c4;
+  --cat-border: #59871F;
+  --cat-text: #59871f;
+}
+
+.cat_drinks {
+  --cat-bg: #e5f7f3;
+  --cat-border: #1F8787;
+  --cat-text: #1f8787;
+}
+
+.categoryButton:hover {
+  transform: translateY(-1px);
+}
+
+.amountInput::-webkit-outer-spin-button,
+.amountInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
