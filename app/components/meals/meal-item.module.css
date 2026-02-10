@@ -1,3 +1,9 @@
+.card {
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px;
+}
+
 .meal {
   display: flex;
   flex-direction: column;
@@ -6,10 +12,11 @@
   overflow: hidden;
   transition: all 0.3s ease-in-out;
   color: #ddd6cb;
+  position: relative;
 }
 
 .headerText {
-  padding: 0.5rem 0 0 0;
+  padding: 0.5rem 0;
 }
 
 .headerText h2 {
@@ -41,9 +48,82 @@
 
 .content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   height: 100%;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  width: 61%;
+}
+
+.categoryPill {
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid #ccc;
+  font-size: 0.7rem;
+  background: var(--cat-bg, #fff);
+  border-color: var(--cat-border, #ccc);
+  color: var(--cat-text, #111);
+  text-transform: uppercase;
+  text-decoration: none;
+
+}
+
+@media (max-width: 640px) {
+  .content {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+
+  .cooking_time {
+    justify-content: flex-start;
+  }
+
+  .image {
+    height: 12rem;
+  }
+}
+
+
+.cat_main_dishes {
+  --cat-bg: #ffeae3;
+  --cat-border: #F0493E;
+  --cat-text: #f0493e;
+}
+
+.cat_breakfast {
+  --cat-bg: #feefc9;
+  --cat-border: #f0a500;
+  --cat-text: #7a4b00;
+}
+
+.cat_dinner {
+  --cat-bg: #e9f3ff;
+  --cat-border: #2b6cb0;
+  --cat-text: #1a3d6b;
+}
+
+.cat_desserts {
+  --cat-bg: #efedfa;
+  --cat-border: #3C3A8F;
+  --cat-text: #3c3a8f;
+}
+
+.cat_snack {
+  --cat-bg: #f0f5c4;
+  --cat-border: #59871F;
+  --cat-text: #59871f;
+}
+
+.cat_drinks {
+  --cat-bg: #e5f7f3;
+  --cat-border: #1F8787;
+  --cat-text: #1f8787;
 }
 
 .summary {
@@ -51,24 +131,35 @@
   margin: 0 auto 10px auto;
 }
 
-/* .actions {
-  padding: 1rem;
-  text-align: right;
-} */
-
-/* .actions a {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  background: #e82429;
-  color: #ffffff;
+.deleteButton {
+  border: none;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  background: transparent;
+  font-size: 22px;
   font-weight: bold;
-  text-decoration: none;
+  cursor: pointer;
+  margin-left: auto;
+  color: #d22;
+  transition: 0.2s;
 }
 
-.actions a:hover,
-.actions a:active {
-  background: linear-gradient(90deg, #fd4715, #f9b241);
-  box-shadow: 0 0 12px rgba(242, 100, 18, 0.8);
-} */
+.deleteButton:hover {
+  color: #a00;
+}
+
+.cooking_time {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.cooking_time p {
+  margin: 0;
+  line-height: 0;
+}
+
+.time {
+  color: #bbbebf;
+}

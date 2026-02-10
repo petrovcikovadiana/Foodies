@@ -8,3 +8,19 @@
   list-style: none;
   padding: 0;
 }
+
+/* MOBIL */
+@media (max-width: 640px) {
+  .meals {
+    width: 100% !important;
+    max-width: 100% !important;
+    grid-template-columns: 1fr;
+    margin: 1rem auto;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .meals>li {
+    width: 100%;
+  }
+}

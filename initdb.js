@@ -1,5 +1,4 @@
 const sql = require("better-sqlite3");
-// create a new SQLite database
 const db = sql("meals.db");
 
 const dummyMeals = [
@@ -125,6 +124,8 @@ const dummyMeals = [
     image: "/images/schnitzel.jpg",
     summary:
       "Crispy, golden-brown breaded veal cutlet, a classic Austrian dish.",
+    cooking_time: 60,
+
     instructions: `
       1. Prepare the veal:
          Pound veal cutlets to an even thickness.
@@ -141,28 +142,6 @@ const dummyMeals = [
     creator: "Franz Huber",
     creator_email: "franzhuber@example.com",
   },
-  {
-    title: "Fresh Tomato Salad",
-    slug: "fresh-tomato-salad",
-    image: "/images/tomato-salad.jpg",
-    summary:
-      "A light and refreshing salad with ripe tomatoes, fresh basil, and a tangy vinaigrette.",
-    instructions: `
-      1. Prepare the tomatoes:
-        Slice fresh tomatoes and arrange them on a plate.
-    
-      2. Add herbs and seasoning:
-         Sprinkle chopped basil, salt, and pepper over the tomatoes.
-    
-      3. Dress the salad:
-         Drizzle with olive oil and balsamic vinegar.
-    
-      4. Serve:
-         Enjoy this simple, flavorful salad as a side dish or light meal.
-    `,
-    creator: "Sophia Green",
-    creator_email: "sophiagreen@example.com",
-  },
 ];
 
 db.prepare(
@@ -174,10 +153,11 @@ db.prepare(
        image TEXT NOT NULL,
        summary TEXT NOT NULL,
        instructions TEXT NOT NULL,
+           cooking_time INTEGER NOT NULL,
        creator TEXT NOT NULL,
        creator_email TEXT NOT NULL
     )
-`
+`,
 ).run();
 
 async function initData() {
@@ -189,6 +169,8 @@ async function initData() {
          @image,
          @summary,
          @instructions,
+             @cooking_time,
+
          @creator,
          @creator_email
       )

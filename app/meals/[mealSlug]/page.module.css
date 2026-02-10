@@ -1,57 +1,254 @@
+.wrapper {
+  margin: 0 15px
+}
+
 .header {
   margin: auto;
-  max-width: 30rem;
+
+  max-width: 50rem;
   justify-content: center;
   align-items: center;
 }
 
 .image {
-  position: relative;
-  width: 30rem;
-  height: 20rem;
+  width: 100%;
+  max-width: none;
+  margin: 0 auto;
+
+  border-radius: 14px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
 }
 
-.header img {
+.imageMedia {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+}
+
+.imageMedia img {
   object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
-  animation: fade-slide-in-from-left 1s ease-out forwards;
 }
 
 .headerText {
   color: #13120f;
   animation: fade-slide-in-from-right 1s ease-out forwards;
+  display: flex;
+  flex-direction: row;
 }
 
 .headerText h1 {
-  font-size: 2rem;
-  text-align: center;
+  font-size: 2.5rem;
+  text-align: left;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+  margin-bottom: 0
+}
+
+.nutrition {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.nutrition :global(section) {
+  width: 100%;
+  max-width: none;
+}
+
+.nutrition>* {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+@media (max-width: 768px) {
+  .nutrition {
+    flex-direction: column;
+  }
+}
+
+.nutrition img {
+  object-fit: cover;
+  animation: fade-slide-in-from-left 1s ease-out forwards;
+}
+
+.main {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.info {
+  background: #fff;
+  padding: 0.75rem 1rem;
+
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  justify-content: center;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+
+  animation: fade-slide-in-from-bottom 0.8s ease-out forwards;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.06);
+
+}
+
+
+.cooking_time {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.verticalDivider {
+  width: 1px;
+  height: 22px;
+  background-color: #994d52;
+  margin: 0 10px;
+  flex-shrink: 0;
+  align-self: center;
 }
 
 .creator {
   font-size: 1rem;
   color: #994d52;
-  text-align: center;
+  text-align: left;
   font-style: italic;
+}
+
+.groupWrap {
+  display: grid;
+  gap: 12px;
+}
+
+.groupTitle {
+  font-weight: 600;
+  margin: 8px 0;
 }
 
 .summary {
   font-size: 1.5rem;
 }
 
+.ingredients {
+  margin-top: 3rem;
+}
+
+.ingredients h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: #1c0d0d;
+}
+
+.ingredientsCard {
+  background: #fff;
+  border: 1px solid #e8d1d1;
+  border-radius: 14px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.ingredientsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .ingredientsList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.ingredientItem {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0.25rem 0;
+  font-size: 1rem;
+  color: #994d52;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.instructions ul li {
+  list-style-type: none;
+}
+
 .instructions {
-  font-size: 1.25rem;
-  line-height: 1.5;
-  color: #13120f;
-  border-radius: 8px;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
-  padding: 2rem;
-  max-width: 60rem;
-  margin: 2rem auto;
-  animation: fade-slide-in-from-bottom 1s ease-out forwards;
+  margin-top: 4rem;
+}
+
+.instructions h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: #1c0d0d;
+}
+
+.instructionsList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  position: relative;
+}
+
+.instructionsList li {
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.instructionsList::before {
+  content: "";
+  position: absolute;
+  left: 1.25rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #e82429, transparent);
+}
+
+.instructionItem {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  position: relative;
+}
+
+.stepIndex {
+  min-width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: #e82429;
+  color: white;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.instructionItem p {
+  background: #fff;
+  border: 1px solid #e8d1d1;
+  border-radius: 14px;
+  padding: 0.75rem 1rem;
+  color: #1c0d0d;
+  line-height: 1.6;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .loading {
@@ -67,6 +264,7 @@
     opacity: 0;
     transform: translateX(-1rem);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0);
@@ -78,6 +276,7 @@
     opacity: 0;
     transform: translateX(1rem);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0);
@@ -89,6 +288,7 @@
     opacity: 0;
     transform: translateY(1rem);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -99,10 +299,22 @@
   0% {
     opacity: 0;
   }
+
   50% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .ingredientsList {
+    grid-template-columns: 1fr;
+  }
+
+  .instructionsList::before {
+    left: 1.15rem;
   }
 }

@@ -1,0 +1,64 @@
+.label {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.controls {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.servings {
+    display: flex;
+    flex-direction: row;
+    float: right;
+}
+
+.button {
+    width: 22px;
+    height: 22px;
+    display: grid;
+    place-items: center;
+
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    border-radius: 6px;
+    background: transparent;
+
+    font-size: 14px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0;
+}
+
+.groupTitle {
+    font-weight: 800;
+}
+
+.button:hover {
+    border-color: rgba(0, 0, 0, 0.35);
+}
+
+.button:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+}
+
+.value {
+    min-width: 18px;
+    text-align: center;
+    font-size: 14px;
+    font-variant-numeric: tabular-nums;
+}
+
+.list {
+    margin-top: 12px;
+}
+
+.list li {
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
