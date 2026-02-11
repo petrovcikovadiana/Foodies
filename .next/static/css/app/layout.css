@@ -190,6 +190,7 @@ body {
   top: 8px;
 }
 
+/* Backdrop (klik mimo) */
 .main-header_backdrop__h6Tkl {
   position: fixed;
   inset: 0;
@@ -206,6 +207,7 @@ body {
     z-index: 60;
   }
 
+  /* schovej menu defaultně */
   .main-header_nav__vsGWg {
     position: fixed;
     top: 0;
