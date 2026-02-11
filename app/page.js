@@ -17,6 +17,7 @@ export default function Home() {
                 alt="A plate with food on it"
                 priority
                 fill
+                sizes="(max-width: 768px) 100vw, 600px"
               />
             </div>
             <div className={classes.heroText}>
