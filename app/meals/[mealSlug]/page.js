@@ -10,16 +10,18 @@ import Image from "next/image";
 import NutritionTable from "@/app/components/nutrition-table";
 
 export async function generateMetadata({ params }) {
-  const meal = getMeal(params.mealSlug);
+  const meal = await getMeal(params.mealSlug);
+
+  if (!meal) return { title: "Meal not found" };
+
   return {
     title: meal.title,
-    description: meal.summary,
+    description: meal.summary ?? "",
   };
 }
 
-export default function MealDetailsPage({ params }) {
-  const meal = getMeal(params.mealSlug);
-
+export default async function MealDetailsPage({ params }) {
+  const meal = await getMeal(params.mealSlug);
   if (!meal) {
     notFound();
   }
