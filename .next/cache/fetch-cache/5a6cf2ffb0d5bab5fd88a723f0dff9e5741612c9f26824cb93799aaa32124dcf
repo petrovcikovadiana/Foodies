@@ -1,1 +1,0 @@
-{"kind":"FETCH","data":{"headers":{"cache-control":"no-store, must-revalidate","connection":"close","content-type":"text/x-component","date":"Wed, 04 Feb 2026 19:02:21 GMT","vary":"RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Url, Accept-Encoding","x-powered-by":"Next.js"},"body":"","status":200,"url":"http://localhost:3000/meals"},"revalidate":31536000,"tags":[]}
