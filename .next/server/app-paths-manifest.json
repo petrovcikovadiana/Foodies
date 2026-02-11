@@ -1,6 +1,1 @@
-{
-  "/meals/page": "app/meals/page.js",
-  "/meals/share/page": "app/meals/share/page.js",
-  "/not-found": "app/not-found.js",
-  "/icon.png/route": "app/icon.png/route.js"
-}
+{}

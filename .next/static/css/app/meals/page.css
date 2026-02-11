@@ -117,7 +117,6 @@
   margin-left: auto;
 }
 
-/* DESKTOP default */
 .page_meals__cSsNL {
   display: flex;
   flex-direction: row;
@@ -126,7 +125,6 @@
   align-items: flex-start;
 }
 
-/* Sidebar kategórie */
 .page_categoriesBar__7OCBZ {
   display: flex;
   flex-direction: column;
@@ -142,7 +140,6 @@
 .page_mealsContent__2B3Pn {
   flex: 1 1;
   min-width: 0;
-  /* aby obsah nepretiekol */
 }
 
 .page_catLink__xG6zL,
@@ -171,7 +168,6 @@
   border-color: var(--cat-border);
 }
 
-/* Search input */
 .page_search__w2Evq {
   background: #f1e8e8;
   border-radius: 15px;
@@ -212,7 +208,6 @@
   }
 }
 
-/* MOBIL: kategorie pod sebou */
 @media (max-width: 640px) {
   .page_main__nPmGK {
     margin: 0 10px;
@@ -221,9 +216,7 @@
   .page_categoriesBar__7OCBZ {
     flex-direction: column;
     flex-wrap: nowrap;
-    /* klidně může být i bez tohoto */
     overflow: visible;
-    /* důležité: žádný horizontální scroll */
     width: 100%;
   }
 }
@@ -234,7 +227,6 @@
   scroll-snap-align: start;
 }
 
-/* nepovinné: jemný scrollbar */
 .page_categoriesBar__7OCBZ::-webkit-scrollbar {
   height: 6px;
 }
@@ -250,6 +242,35 @@
   }
 
   .page_mealsContent__2B3Pn {
+    width: 100%;
+  }
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./app/components/meals/meals-grid.module.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************/
+.meals-grid_meals__fuGlW {
+  width: 80%;
+  max-width: 90rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  grid-gap: 1rem;
+  margin: 2rem auto;
+  list-style: none;
+  padding: 0;
+}
+
+/* MOBIL */
+@media (max-width: 640px) {
+  .meals-grid_meals__fuGlW {
+    width: 100% !important;
+    max-width: 100% !important;
+    grid-template-columns: 1fr;
+    margin: 1rem auto;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .meals-grid_meals__fuGlW>li {
     width: 100%;
   }
 }
@@ -344,7 +365,6 @@
 
   .meal-item_image__Uz__C {
     height: 12rem;
-    /* volitelné: ať je obrázek trochu vyšší na mobilu */
   }
 }
 
@@ -385,8 +405,6 @@
   --cat-text: #1f8787;
 }
 
-
-
 .meal-item_summary__ORmLm {
   color: #994d52;
   margin: 0 auto 10px auto;
@@ -423,36 +441,4 @@
 
 .meal-item_time__bqBlH {
   color: #bbbebf;
-}
-/*!**************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./app/components/meals/meals-grid.module.css ***!
-  \**************************************************************************************************************************************************************************************************************************************************************************************/
-.meals-grid_meals__fuGlW {
-  width: 80%;
-  max-width: 90rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-  grid-gap: 1rem;
-  margin: 2rem auto;
-  list-style: none;
-  padding: 0;
-}
-
-/* MOBIL */
-@media (max-width: 640px) {
-  .meals-grid_meals__fuGlW {
-    width: 100% !important;
-    /* vynutí full width */
-    max-width: 100% !important;
-    grid-template-columns: 1fr;
-    margin: 1rem auto;
-    /* auto = centrování, kdyby se něco zúžilo */
-    padding: 0;
-    /* případně 0 8px, pokud chceš odsazení */
-    box-sizing: border-box;
-  }
-
-  .meals-grid_meals__fuGlW>li {
-    width: 100%;
-  }
 }
