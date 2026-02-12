@@ -48,7 +48,6 @@
 /* --- HAMBURGER --- */
 .menuButton {
   display: none;
-  /* desktop */
   background: transparent;
   border: none;
   padding: 0.5rem;

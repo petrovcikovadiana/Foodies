@@ -9,11 +9,11 @@
 
 .link:hover,
 .link:active {
-  background: linear-gradient(90deg, #1d4da8, rgb(58, 117, 225));
+  background: #df343a;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 18px rgba(26, 26, 27, 0.8);
+  text-shadow: 0 0 18px rgba(26, 26, 27, 0.5);
 }
 
 .active {

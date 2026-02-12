@@ -9,21 +9,6 @@
     text-transform: uppercase;
 }
 
-.toggle {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    padding: 8px 12px;
-    border-radius: 999px;
-
-    border: 1px solid #ddd;
-    cursor: pointer;
-    color: var(--cat-text, #333);
-
-    text-transform: uppercase;
-}
-
 .chev {
     margin-left: 10px;
     display: flex;
@@ -36,30 +21,50 @@
 }
 
 .link,
-.active {
-    background: var(--cat-bg, #eee);
-    border: 1px solid transparent;
-    color: var(--cat-text, #333);
-
+.active,
+.toggle {
+    min-height: 37px;
     padding: 8px 12px;
     border-radius: 999px;
-    text-decoration: none;
-
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    line-height: 1;
+    font: inherit;
 
-    transition: border-color 0.15s ease, filter 0.15s ease;
-    white-space: nowrap;
+}
+
+.toggle {
+    border: 1px solid var(--pill-border, #ddd);
+    background: var(--pill-bg, #eee);
+    color: var(--pill-text, #333);
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.link {
+    background: var(--cat-bg, #eee);
+    border: 1px solid transparent;
+    color: var(--cat-text, #333);
+    text-decoration: none;
+}
+
+.active {
+    background: var(--cat-bg, #eee);
+    border: 1px solid var(--cat-border, #ddd);
+    color: var(--cat-text, #333);
+    text-decoration: none;
+
 }
 
 .link:hover {
     border-color: var(--cat-border);
 }
 
-.active {
-    border-color: var(--cat-border);
+.chev svg {
+    display: block;
 }
+
 
 @media (max-width: 1024px) {
     .sidebar {
