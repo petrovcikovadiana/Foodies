@@ -5,6 +5,9 @@ import { useSearchParams } from "next/navigation";
 import { useMemo, useState } from "react";
 import classes from "./categories-sidebar.module.css";
 
+import { MdKeyboardArrowRight } from "react-icons/md";
+import { MdKeyboardArrowDown } from "react-icons/md";
+
 const CATEGORY_OPTIONS = [
   { label: "Main Dishes", value: "main_dishes" },
   { label: "Breakfast", value: "breakfast" },
@@ -19,7 +22,7 @@ export default function CategoriesSidebar() {
   const category = sp.get("category") || "";
   const q = sp.get("q") || "";
 
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   const allHref = useMemo(() => {
     const params = new URLSearchParams();
@@ -51,7 +54,9 @@ export default function CategoriesSidebar() {
         aria-expanded={open}
       >
         Categories
-        <span className={classes.chev}>{open ? "▾" : "▸"}</span>
+        <span className={classes.chev}>
+          {open ? <MdKeyboardArrowDown /> : <MdKeyboardArrowRight />}
+        </span>
       </button>
 
       {open && (

@@ -30,10 +30,12 @@
 }
 
 .heroText h1 {
-  font-size: 2.5rem;
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
   font-weight: bold;
   margin-bottom: 1rem;
+  line-height: 1.2;
 }
+
 
 .heroText p {
   font-size: 1.25rem;
@@ -59,4 +61,18 @@
 .cta a:hover,
 .cta a:active {
   background: linear-gradient(90deg, #b41c21, #721114);
+}
+
+@media (max-width: 640px) {
+  .heroText {
+    width: 90%;
+  }
+
+  .heroText h1 {
+    font-size: 1.9rem;
+  }
+
+  .heroText p {
+    font-size: 1rem;
+  }
 }
