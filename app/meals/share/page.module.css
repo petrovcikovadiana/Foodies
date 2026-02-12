@@ -59,12 +59,19 @@
 
 .form input[type="time"] {
   background: #fff;
-  color: #994d52;
-  -webkit-appearance: auto;
-  font-family: inherit;
+  background-color: #fff;
 
+  color: #994d52;
+  -webkit-text-fill-color: #994d52;
+
+  color-scheme: light;
+
+  -webkit-appearance: auto;
   appearance: auto;
+
+  min-height: 44px;
 }
+
 
 
 .form textarea::placeholder {
