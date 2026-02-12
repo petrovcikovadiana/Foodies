@@ -43,6 +43,11 @@ export default function CategoriesSidebar() {
       <Link
         href={allHref}
         className={!category ? classes.active : classes.link}
+        style={{
+          "--cat-bg": "var(--cat-all-bg)",
+          "--cat-border": "var(--cat-all-border)",
+          "--cat-text": "var(--cat-all-text)",
+        }}
       >
         All
       </Link>
@@ -52,6 +57,11 @@ export default function CategoriesSidebar() {
         className={classes.toggle}
         onClick={() => setOpen((v) => !v)}
         aria-expanded={open}
+        style={{
+          "--pill-bg": "var(--cat-all-bg)",
+          "--pill-border": "var(--cat-all-border)",
+          "--pill-text": "var(--cat-all-text)",
+        }}
       >
         Categories
         <span className={classes.chev}>

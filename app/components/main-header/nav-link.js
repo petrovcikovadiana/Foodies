@@ -4,18 +4,18 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import classes from "./nav-link.module.css";
 
-export default function NavLink({ href, children }) {
+export default function NavLink({ href, children, onClick }) {
   const path = usePathname();
+  const isActive =
+    href === "/meals" ? path === "/meals" : path.startsWith(href);
+
   return (
     <Link
       href={href}
-      className={
-        path.startsWith(href)
-          ? `${classes.link} ${classes.active}`
-          : classes.link
-      }
+      onClick={onClick}
+      className={isActive ? `${classes.link} ${classes.active}` : classes.link}
     >
-      {children}{" "}
+      {children}
     </Link>
   );
 }

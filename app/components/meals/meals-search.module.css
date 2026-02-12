@@ -30,4 +30,10 @@
     padding: 0.4rem 0.55rem;
     cursor: pointer;
     line-height: 1;
+    color: #111;
+
+}
+
+.searchBtn:hover {
+    background: rgba(0, 0, 0, 0.04);
 }

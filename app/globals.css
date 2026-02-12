@@ -30,6 +30,10 @@
   --cat-drinks-bg: #e5f7f3;
   --cat-drinks-border: #1F8787;
   --cat-drinks-text: #1f8787;
+
+  --cat-all-bg: #eee;
+  --cat-all-border: #ddd;
+  --cat-all-text: #333;
 }
 
 * {
