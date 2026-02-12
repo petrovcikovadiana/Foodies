@@ -28,6 +28,13 @@
 
 .form {
   max-width: 50rem;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form p {
+  margin: 0
 }
 
 .form label {
@@ -49,14 +56,6 @@
   font-family: "Montserrat", sans-serif;
   color: #994d52;
 }
-
-.form input[type="time"] {
-  background: #fff;
-  color: #994d52;
-  -webkit-appearance: none;
-  appearance: none;
-}
-
 
 .form textarea::placeholder {
   font-size: 1rem;
@@ -93,9 +92,8 @@
 .listRow {
   display: flex;
   gap: 0.5rem;
-  margin: 15px 0;
   min-width: 0;
-
+  margin-bottom: 10px
 }
 
 .listTextarea {
@@ -141,6 +139,7 @@
 .cooking_time {
   flex: 0 0 20%;
   max-width: 20%;
+  background: #fff;
 
 }
 
@@ -149,10 +148,14 @@
   gap: 12px;
 }
 
+.groupBox {
+  margin-bottom: 10px
+}
+
 .groupHeader {
   display: flex;
   gap: 0.5rem;
-  margin: 15px 0;
+  margin-bottom: 10px
 }
 
 .groupTitleInput {
@@ -190,10 +193,13 @@
   cursor: not-allowed;
 }
 
+
+
 .categoriesLabel {
   margin-bottom: 0.5rem;
   color: #1c0d0d;
   font-size: 1.5rem;
+
 }
 
 .categoryButtons {
