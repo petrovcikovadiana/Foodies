@@ -50,6 +50,14 @@
   color: #994d52;
 }
 
+.form input[type="time"] {
+  background: #fff;
+  color: #994d52;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+
 .form textarea::placeholder {
   font-size: 1rem;
   color: #a4abb9;
