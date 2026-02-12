@@ -302,7 +302,6 @@ export default function ShareMealPage() {
                     </button>
                   </div>
                 ))}
-
                 <button
                   type="button"
                   className={classes.addButton}
