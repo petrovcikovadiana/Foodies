@@ -69,10 +69,19 @@ export default async function MealDetailsPage({ params }) {
                 <PiForkKnife /> <p>Serves</p>
                 <span> {meal.servings ?? 1}</span>
               </div>
+              {(meal.price_min_usd || meal.price_max_usd) && (
+                <p>
+                  Price/serving: ${meal.price_min_usd ?? "?"} – $
+                  {meal.price_max_usd ?? "?"}
+                </p>
+              )}
             </div>
           </div>
 
-          <NutritionTable slug={meal.slug} />
+          <NutritionTable
+            perServing={meal.nutrition_per_serving}
+            unknown={meal.nutrition_unknown}
+          />
         </div>
 
         <section className={classes.ingredients}>

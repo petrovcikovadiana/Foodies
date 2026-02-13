@@ -11,6 +11,8 @@ export default function MealItem({
   image,
   cooking_time,
   categories,
+  price_min_usd,
+  price_max_usd,
 }) {
   const cats = Array.isArray(categories)
     ? categories
@@ -27,6 +29,20 @@ export default function MealItem({
     if (h === 0) return `${m} min`;
     if (m === 0) return `${h} h`;
     return `${h} h ${m} min`;
+  }
+
+  function formatPrice(min, max) {
+    if (min == null && max == null) return null;
+
+    if (min != null && max != null) {
+      if (min === max) return `$${min.toFixed(2)} / serving`;
+      return `$${min.toFixed(2)} – $${max.toFixed(2)} / serving`;
+    }
+
+    if (min != null) return `from $${min.toFixed(2)} / serving`;
+    if (max != null) return `up to $${max.toFixed(2)} / serving`;
+
+    return null;
   }
 
   return (
@@ -50,8 +66,14 @@ export default function MealItem({
           </button>
         </form>
       </header>
+
       <div className={classes.headerText}>
         <h2>{title}</h2>
+        {formatPrice(price_min_usd, price_max_usd) && (
+          <div className={classes.price}>
+            <p>{formatPrice(price_min_usd, price_max_usd)}</p>
+          </div>
+        )}
       </div>
       <div className={classes.content}>
         <div className={classes.categories}>
