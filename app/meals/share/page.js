@@ -383,6 +383,33 @@ export default function ShareMealPage() {
               </select>
             </p>
           </div>
+          <div className={classes.row}>
+            <p>
+              <label htmlFor="price_min_usd">Price (min) USD / serving</label>
+              <input
+                type="number"
+                id="price_min_usd"
+                name="price_min_usd"
+                placeholder="e.g. 2.50"
+                min="0"
+                step="0.01"
+                inputMode="decimal"
+              />
+            </p>
+
+            <p>
+              <label htmlFor="price_max_usd">Price (max) USD / serving</label>
+              <input
+                type="number"
+                id="price_max_usd"
+                name="price_max_usd"
+                placeholder="e.g. 6.00"
+                min="0"
+                step="0.01"
+                inputMode="decimal"
+              />
+            </p>
+          </div>
           <div className={classes.categories}>
             <label className={classes.label}>Categories</label>
 

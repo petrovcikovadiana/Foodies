@@ -1,5 +1,4 @@
 "use client";
-import { useEffect, useState } from "react";
 import classes from "./nutrition-table.module.css";
 
 function r(n, digits = 1) {
@@ -8,20 +7,8 @@ function r(n, digits = 1) {
   return x.toFixed(digits);
 }
 
-export default function NutritionTable({ slug }) {
-  const [data, setData] = useState(null);
-
-  useEffect(() => {
-    fetch(`/api/nutrition/${slug}`)
-      .then((r) => r.json())
-      .then(setData)
-      .catch(() => setData({ error: true }));
-  }, [slug]);
-
-  if (!data) return <p>Calculating nutrition values…</p>;
-  if (data.error) return <p>Failed to load nutrition values.</p>;
-
-  const p = data.perServing;
+export default function NutritionTable({ perServing, unknown }) {
+  if (!perServing) return <p>Nutrition data is not available.</p>;
 
   return (
     <section className={classes.paper}>
@@ -34,32 +21,32 @@ export default function NutritionTable({ slug }) {
         <tbody>
           <tr>
             <td className={classes.label}>Energy</td>
-            <td className={classes.value}>{r(p.kcal, 0)} kcal</td>
+            <td className={classes.value}>{r(perServing.kcal, 0)} kcal</td>
           </tr>
           <tr>
             <td className={classes.label}>Protein</td>
-            <td className={classes.value}>{r(p.protein_g)} g</td>
+            <td className={classes.value}>{r(perServing.protein_g)} g</td>
           </tr>
           <tr>
             <td className={classes.label}>Carbs</td>
-            <td className={classes.value}>{r(p.carbs_g)} g</td>
+            <td className={classes.value}>{r(perServing.carbs_g)} g</td>
           </tr>
           <tr>
             <td className={classes.label}>Fat</td>
-            <td className={classes.value}>{r(p.fat_g)} g</td>
+            <td className={classes.value}>{r(perServing.fat_g)} g</td>
           </tr>
           <tr>
             <td className={classes.label}>Fiber</td>
-            <td className={classes.value}>{r(p.fiber_g)} g</td>
+            <td className={classes.value}>{r(perServing.fiber_g)} g</td>
           </tr>
           <tr>
             <td className={classes.label}>Salt</td>
-            <td className={classes.value}>{r(p.salt_g)} g</td>
+            <td className={classes.value}>{r(perServing.salt_g)} g</td>
           </tr>
         </tbody>
       </table>
 
-      {data.unknown?.length ? (
+      {unknown?.length ? (
         <p className={classes.note}>
           Some ingredients could not be calculated.
         </p>

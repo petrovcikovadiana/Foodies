@@ -44,7 +44,6 @@
   text-align: left;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
-  text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
   margin-bottom: 0
 }
 
@@ -214,7 +213,7 @@
   content: "";
   position: absolute;
   left: 1.25rem;
-  top: 0;
+  top: 50px;
   bottom: 0;
   width: 2px;
   background: linear-gradient(to bottom, #e82429, transparent);
@@ -223,7 +222,7 @@
 .instructionItem {
   display: flex;
   gap: 1rem;
-  align-items: flex-start;
+  align-items: center;
   position: relative;
 }
 
